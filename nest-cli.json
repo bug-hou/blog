@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/blog/src",
+  "generateOptions": {
+    "flat": false,
+    "spec": false
+  },
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/blog/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/blog",
+  "projects": {
+    "blog": {
+      "type": "application",
+      "root": "apps/blog",
+      "entryFile": "main",
+      "sourceRoot": "apps/blog/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/blog/tsconfig.app.json"
+      }
+    },
+    "talk": {
+      "type": "application",
+      "root": "apps/talk",
+      "entryFile": "main",
+      "sourceRoot": "apps/talk/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/talk/tsconfig.app.json"
+      }
+    }
+  }
+}
