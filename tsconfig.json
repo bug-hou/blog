@@ -18,11 +18,50 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
+      "@app/advance": [
+        "libs/advance/src"
+      ],
+      "@app/advance/*": [
+        "libs/advance/src/*"
+      ],
+      "@app/auth": [
+        "libs/auth/src"
+      ],
+      "@app/auth/*": [
+        "libs/auth/src/*"
+      ],
       "@app/common": [
         "libs/common/src"
       ],
       "@app/common/*": [
         "libs/common/src/*"
+      ],
+      "@app/email": [
+        "libs/email/src"
+      ],
+      "@app/email/*": [
+        "libs/email/src/*"
+      ],
+      "@app/oss": [
+        "libs/oss/src"
+      ],
+      "@app/oss/*": [
+        "libs/oss/src/*"
+      ],
+      "@app/redis": [
+        "libs/redis/src"
+      ],
+      "@app/redis/*": [
+        "libs/redis/src/*"
+      ],
+      "@app/typeorm": [
+        "libs/typeorm/src"
+      ],
+      "@app/typeorm/*": [
+        "libs/typeorm/src/*"
+      ],
+      "@utils/*": [
+        "utils/*"
       ]
     }
   }

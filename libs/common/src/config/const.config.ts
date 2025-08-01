@@ -1,0 +1,1 @@
+export const UUIDHeaderName = "blog-x-request-id"
